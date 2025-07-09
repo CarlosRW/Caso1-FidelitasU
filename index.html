@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Estudiantes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Registro de Estudiantes</h1>
+
+  <form id="formulario">
+    <input type="text" id="nombre" placeholder="Nombre" />
+    <input type="text" id="apellidos" placeholder="Apellidos" />
+    <input type="number" id="nota" placeholder="Nota (0-100)" />
+    <button type="submit">Agregar Estudiante</button>
+    <p id="error" class="error"></p>
+  </form>
+
+  <table id="tabla-estudiantes">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Nota</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Carlos</td><td>Ramírez Wong</td><td class="verde">90</td></tr>
+      <tr><td>Yoselin</td><td>Montero Tencio</td><td class="verde">87</td></tr>
+      <tr><td>Marco</td><td>Rojas Castro</td><td class="rojo">68</td></tr>
+    </tbody>
+  </table>
+
+  <div id="resumen">
+    <p><strong>Estudiante con mayor nota:</strong> <span id="mayor-nota"></span></p>
+    <p><strong>Promedio de notas:</strong> <span id="promedio"></span></p>
+    <p><strong>Nota más baja:</strong> <span id="menor-nota"></span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
